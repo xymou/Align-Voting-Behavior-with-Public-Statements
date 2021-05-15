@@ -38,7 +38,7 @@ def find_twitter_facebook(url):
 # get url of legislator list
 def get_all_rep_list(url):
     url_rep_list = {}
-    url_rep_list["1"] = url  # 起始页
+    url_rep_list["1"] = url 
     changed = True
     while (changed):
         changed = False

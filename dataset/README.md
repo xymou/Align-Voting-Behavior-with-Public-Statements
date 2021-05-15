@@ -11,6 +11,6 @@
 
 
 ## Data Source and Tools
-1.Twitter:https://twitter.com/
-2.twitterscraper: https://github.com/taspinar/twitterscraper
-3.US Congress: http://www.congress.gov/
+1.Twitter:https://twitter.com/  
+3.twitterscraper: https://github.com/taspinar/twitterscraper  
+4.US Congress: http://www.congress.gov/  

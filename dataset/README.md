@@ -46,7 +46,7 @@ It involves 735 legislators who vote between 2009 and 2018. All tweets and follo
 
 2.Version_2  
 It involves 843 legislators who vote between 2009 and 2020. All tweets of them before Dec 31st,2020 are crawled. Following list will be updated later.  
-[download]()
+[download](https://www.dropbox.com/s/zfph6czv4og5ekk/Leg_Twitter_v2.zip?dl=0)
 
 ## Data Source and Tools
 1.Twitter:https://twitter.com/  

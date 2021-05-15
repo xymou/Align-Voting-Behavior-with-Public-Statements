@@ -9,7 +9,7 @@ This dataset contains tweets posted by legislators. The overall crawling process
 - Crawl tweets and following list using [twitterscraper](https://github.com/taspinar/twitterscraper)
 
 Statistics of the dataset is shown as follows.
-![avatar]()
+![data](https://github.com/xymou/Align-Voting-Behavior-with-Public-Statements-for-Legislator-Representation-Learning/blob/main/dataset/data.png)
 
 ### Datafields
 We got following information in our json files:

@@ -4,7 +4,7 @@
 ### Description
 This dataset contains tweets posted by legislators. The overall crawling process is made up of 4 steps:
 - Get personal pages of legislators from website of [US congress](http://www.congress.gov/)  
-- Automatically crawl twitter account in their personal pages
+- Automatically crawl twitter account in their personal pages. (personal_web.py)  
 - Manually search and identify legislators on Twitter, for those can not be acquired by step2
 - Crawl tweets and following list using [twitterscraper](https://github.com/taspinar/twitterscraper)
 

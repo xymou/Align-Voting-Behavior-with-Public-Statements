@@ -10,7 +10,7 @@ This dataset contains tweets posted by legislators. The overall crawling process
 
 ### Datafields
 We got following information in our json files:
-···
+```
 has_media: bool, does this tweet contains any media or not.  
 hashtag: list, hashtags presented in this tweet.  
 img_urls: list, urls of the images posted. 
@@ -32,7 +32,7 @@ tweet_url: string, url of the tweet.
 user_id: string, user_id.
 user_name: string, username.
 vedio_url: string, url of the vedio.
-···
+```
 
 
 ## Downloads

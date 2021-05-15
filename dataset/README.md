@@ -8,7 +8,7 @@ This dataset contains tweets posted by legislators. The overall crawling process
 - Manually search and identify legislators on Twitter, for those can not be acquired by step2
 - Crawl tweets and following list using [twitterscraper](https://github.com/taspinar/twitterscraper)
 
-Statistics of the dataset is shown as follows.
+Statistics of the dataset is shown as follows.  
 ![data](https://github.com/xymou/Align-Voting-Behavior-with-Public-Statements-for-Legislator-Representation-Learning/blob/main/dataset/data.png)
 
 ### Datafields

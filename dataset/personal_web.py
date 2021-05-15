@@ -12,11 +12,11 @@ headers = {
     "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"
 }
 
-# 从个人主页上面获取twitter和facebook账号
+# get twitter and facebook account from personal pages
 def find_twitter_facebook(url):
     try:
         f = requests.get(url,headers=headers)
-        soup = BeautifulSoup(f.content, "html.parser")  # 用lxml解析器解析该网页的内容, 好像f.text也是返回的html
+        soup = BeautifulSoup(f.content, "html.parser")  
         twitter_account = ''
         for tag in soup.find_all(True):
            if ('href' in tag.attrs) and ('twitter.com' in tag['href']) and tag['href'] != twitter_account \
@@ -35,7 +35,7 @@ def find_twitter_facebook(url):
     return twitter_account,facebook_account
 
 
-# 获取所有的议员列表页面（默认6页）的url
+# get url of legislator list
 def get_all_rep_list(url):
     url_rep_list = {}
     url_rep_list["1"] = url  # 起始页
@@ -51,13 +51,13 @@ def get_all_rep_list(url):
                     changed = True
     return list(url_rep_list.values())
 
-# 在某页议员列表里面获取议员名字和议员个人简介页面的地址
+# get name and address of profile from legislator list on certain page
 def find_name_intro_web(url):
     f_rep_list = requests.get(url,headers=headers)
     soup = BeautifulSoup(f_rep_list.content, "html.parser")
-    # 当页的议员名字列表
+    # name list of legislators on this page
     name_list = list()
-    # 当页议员对应的个人简介网站
+    # corresponding profile
     personal_intro_web = list()
     for tag in soup.find_all('li', 'expanded'):
         temp = tag.find_all('span', "result-heading")
@@ -67,7 +67,7 @@ def find_name_intro_web(url):
     return name_list, personal_intro_web
 
 
-# 从个人简介页面上面获取每个人的个人主页
+# get personal pages from profile page
 def find_personal_web(url):
     try:
         f_intro_web = requests.get(url,headers=headers)

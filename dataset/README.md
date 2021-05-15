@@ -5,8 +5,13 @@
 
 
 ## Downloads
-[Version_1](https://www.dropbox.com/s/tuiba9lqz5xz0iz/Leg_Twitter_v1.zip?dl=0)
-[Verson_2]()
+1.Version_1  
+It involves 735 legislators who vote between 2009 and 2018. All tweets of them before July 20th,2020 are crawled.   
+
+[download](https://www.dropbox.com/s/tuiba9lqz5xz0iz/Leg_Twitter_v1.zip?dl=0)  
+
+2.Version_2  
+
 
 
 

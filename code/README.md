@@ -11,7 +11,7 @@ After preprocessing, bill-related data and basic information of legislators is s
 We crawl sponsor list of each legislation in congress.gov. Code can be found in crawl_sponsor.py.  
 
 **3. Prepare Twitter data**  
-We have provided our Twitter data link in the dataset folder. Just download it and place the json files and pickle file id2account in the data folder under this path.  
+We have provided our Twitter data link in the dataset folder. Just download it and place the json files and pickle file id2account in the /data/all_tweets/ folder under this path.  
 
 ### Graph Information Preparation  
 #### Mode 1: Use pretrained embeddings and save

@@ -12,6 +12,7 @@ We crawl sponsor list of each legislation in congress.gov. Code can be found in 
 
 **3. Prepare Twitter data**  
 We have provided our Twitter data link in the dataset folder. Just download it and place the json files and pickle file id2account in the /data/all_tweets/ folder under this path.  
+Besides, for each hashtag, we need to get tweets with the tag on Twitter platform, to get to know the content the tag expresses. crawl_hashtag_tweets.py is an example to achieve this goal.
 
 ### Graph Information Preparation  
 #### Mode 1: Use pretrained embeddings and save

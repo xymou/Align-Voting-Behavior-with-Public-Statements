@@ -8,6 +8,11 @@ Our bill data comes from [Voteview](https://voteview.com/data) and [Yang et al.,
 USRollCall.zip). To reserve bills and resolutions and convert votes into unified labels, we need to process the original csv files. You can find this in preprocess.py.  
 After preprocessing, bill-related data is stored in pickle files named vote, bill2text, bill2year.
 
+**2. Prepare sponsor data**
+
+
+**3.Prepare Twitter data**
+
 
 
 ## Model Construction

@@ -9,10 +9,10 @@ USRollCall.zip). To reserve bills and resolutions and convert votes into unified
 After preprocessing, bill-related data is stored in pickle files named vote, bill2text, bill2year.
 
 **2. Prepare sponsor data**
+We crawl sponsor list of each legislation in congress.gov. Code can be found in crawl_sponsor.py.  
 
-
-**3.Prepare Twitter data**
-
+**3. Prepare Twitter data**
+We have provided our Twitter data link in the dataset folder. Just download it and place the json files and pickle file id2account in the data folder under this path.
 
 
 ## Model Construction

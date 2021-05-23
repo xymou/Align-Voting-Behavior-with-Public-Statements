@@ -13,7 +13,11 @@ We crawl sponsor list of each legislation in congress.gov. Code can be found in 
 **3. Prepare Twitter data**  
 We have provided our Twitter data link in the dataset folder. Just download it and place the json files and pickle file id2account in the data folder under this path.  
 
-### Graph Information Preparation
+### Graph Information Preparation  
+#### Mode 1: Use pretrained embeddings and save
+
+
+#### Mode 2: Fine-tune the modules 
 
 ## Model Construction
 

@@ -5,7 +5,7 @@ To avoid constructing graphs repeatedly and wasting time, we store information o
 ### Data Preprocessing
 **1. Prepare bill data**  
 Our bill data comes from [Voteview](https://voteview.com/data) and [Yang et al.,](http://www.sdspeople.fudan.edu.cn/zywei/data/fudan-USRollCall.zip). To reserve bills and resolutions and convert votes into unified labels, we need to process the original csv files. You can find this in preprocess.py.  
-After preprocessing, bill-related data is stored in pickle files named vote, bill2text, bill2year.
+After preprocessing, bill-related data and basic information of legislators is stored in pickle files named vote, bill2text, bill2year, mem2state, mem2party.
 
 **2. Prepare sponsor data**
 We crawl sponsor list of each legislation in congress.gov. Code can be found in crawl_sponsor.py.  

@@ -97,3 +97,13 @@ for file in filelist:
 
 #%% run
 data=crawl(congress,bill)
+data={}
+for key in sponsor:
+    if len(sponsor[key])==0:
+        data[key]=[]
+    else:
+        tmp=[]
+        for item in sponsor[key]:
+            tmp.append(item['page'].split('/')[-1])
+        data[key]=tmp
+save_obj(data,'sponsor')

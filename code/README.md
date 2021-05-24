@@ -21,9 +21,8 @@ Firstly, we process and number all nodes in the dataset. Then, for a given time 
 #### Mode 2: Fine-tune the modules 
 
 ## Model
-
-
-
+model.py involves some tool functions and RGCN model;   
+walker.py is used for sampling positive and negative neighbors for proximity loss.
 
 ## Training
 train.py includes process of data loading, model construction and training. The parameters include:  

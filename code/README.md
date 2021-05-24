@@ -20,7 +20,7 @@ Firstly, we process and number all nodes in the dataset. Then, for a given time 
 
 #### Mode 2: Fine-tune the modules 
 
-## Model Construction
+## Model
 
 
 

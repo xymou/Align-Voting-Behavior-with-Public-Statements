@@ -38,6 +38,6 @@ train.py includes process of data loading, model construction and training. The 
 --val_time_begin: time begin of the valset (default: 2015)
 --val_time_end: time end of the valset (default: 2016)
 --test_time_begin: time begin of the testset (default: 2017)
---test_time_end: time end of the testset (default: 2017)
+--test_time_end: time end of the testset (default: 2018)
 --ratios: ratios of the losses (default: '1 10 10')
 ```

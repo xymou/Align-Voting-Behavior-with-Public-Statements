@@ -26,3 +26,19 @@ Firstly, we process and number all nodes in the dataset. Then, for a given time 
 
 
 ## Training
+train.py includes process of data loading, model construction and training. The parameters include:  
+```
+--epochs: number of epochs to train (default: 100)  
+--proximity: whether to use proximity loss (default: False)
+--unsup_loss: kind of unsupervised loss (default: normal)  
+--cache_path: cache path  
+--lr: learning rate (default: 0.0001)
+--cuda: cuda service (default: 0)
+--train_time_begin: time begin of the trainset (default: 2015)
+--train_time_end: time end of the trainset (default: 2016)
+--val_time_begin: time begin of the valset (default: 2015)
+--val_time_end: time end of the valset (default: 2016)
+--test_time_begin: time begin of the testset (default: 2017)
+--test_time_end: time end of the testset (default: 2017)
+--ratios: ratios of the losses (default: '1 10 10')
+```

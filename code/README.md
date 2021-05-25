@@ -17,20 +17,20 @@ Besides, for each hashtag, we need to get tweets with the tag on Twitter platfor
 ### Graph Information Preparation  
 #### Mode 1: Use pretrained embeddings and save
 Firstly, we process and number all nodes in the dataset. Then, for a given time period, run prepare.py to select corresponding nodes, compute relations and select labels for subsequent modelling. By running prepare.py, we can get txt files recording nodes, relations and labels of given period. Since the size of the txt files exceeds limit of github, we don't provide them here.  
-This mode is faster than mode 2, since we do not fine-tune the encoders.
+This mode is faster than mode 2, since we do not fine-tune the encoders.  
+The training file is train.py below.
 
 #### Mode 2: Fine-tune the modules 
-Fine tune Bert and member encoders.
+Fine tune Bert and member encoders.  
+The training file is fine_tune.py below. 
 
 ## Model
-#### Mode 1
 model.py involves some tool functions and RGCN model;   
 walker.py is used for sampling positive and negative neighbors for proximity loss.
 
-#### Mode 2
-
 
 ## Training
+#### Mode 1
 train.py includes process of data loading, model construction and training. The parameters include:  
 ```
 --epochs: number of epochs to train (default: 100)  
@@ -47,3 +47,5 @@ train.py includes process of data loading, model construction and training. The 
 --test_time_end: time end of the testset (default: 2018)
 --ratios: ratios of the losses (default: '1 10 10')
 ```
+#### Mode 2
+fine_tune.py combines something of the prepare.py and train.py. The parameters are the same as train.py.

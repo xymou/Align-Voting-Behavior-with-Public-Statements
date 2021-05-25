@@ -21,7 +21,7 @@ from collections import Counter
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 import warnings 
 warnings.filterwarnings("ignore") 
-cuda0=torch.device('cuda:{}'.format(1)) #assign cuda device, keep the same as that in train.py
+cuda0=torch.device('cuda:{}'.format(0)) #assign cuda device, keep the same as that in train.py
 
 def save_obj(obj, name):
     with open('obj'+ name + '.pkl', 'wb+') as f:

@@ -17,6 +17,7 @@ Besides, for each hashtag, we need to get tweets with the tag on Twitter platfor
 ### Graph Information Preparation  
 #### Mode 1: Use pretrained embeddings and save
 Firstly, we process and number all nodes in the dataset. Then, for a given time period, run prepare.py to select corresponding nodes, compute relations and select labels for subsequent modelling. By running prepare.py, we can get txt files recording nodes, relations and labels of given period. Since the size of the txt files exceeds limit of github, we don't provide them here.  
+This mode is faster than mode 2, since we do not fine-tune the encoders.
 
 #### Mode 2: Fine-tune the modules 
 Fine tune Bert and member encoders.

@@ -285,7 +285,7 @@ def mem_process(idx):
 
 def leg_process(idx):
     bill2text=load_obj('bill2text','./data/')
-    node2info=load_obj('node2info','./data')
+    node2info=load_obj('node2info','./data/')
     text=[]
     for b in idx:
         b=bill2text[node2info[b]]

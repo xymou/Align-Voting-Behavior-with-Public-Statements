@@ -28,7 +28,7 @@ The training file is fine_tune.py below.
 
 ## Model
 model.py involves some tool functions and RGCN model;   
-walker.py is used for sampling positive and negative neighbors for proximity loss.
+walker.py is used for sampling positive and negative neighbors for proximity loss. The code is inspired from https://github.com/nguyenvanhoang7398/FANG.
 
 
 ## Training
